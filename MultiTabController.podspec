@@ -22,9 +22,8 @@ DESC
   s.author       = { 'wooodypan' => 'wooodypan@example.com' }
   s.source       = { :git => 'https://github.com/wooodypan/iOSDemoHub.git', :tag => s.version.to_s }
 
-  s.platforms        = { :ios => '15.0' }
-  # 代码里用了 Swift 5.7 的 `guard let self, let controller` 简写，最低要求 5.7 工具链
-  s.swift_versions  = ['5.7']
+  s.platforms        = { :ios => '12.0' }
+  s.swift_versions  = ['5.0']
 
   # 只打包库源码（MultiTabController/MultiTabController/ 下的 swift 文件），
   # 明确排除 App 宿主层（AppDelegate.swift / Info.plist / LaunchScreen / Assets.xcassets）
